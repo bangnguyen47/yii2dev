@@ -4,14 +4,13 @@ namespace app\modules\web\controllers;
 
 use Yii;
 use yii\filters\AccessControl;
-use yii\web\Controller;
+use app\modules\web\components\WebController;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 
-class SiteController extends Controller
+class SiteController extends WebController
 {
-    public $layout='main';
     public function behaviors()
     {
         return [

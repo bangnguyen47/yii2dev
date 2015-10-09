@@ -2,11 +2,10 @@
 
 namespace app\modules\web\controllers;
 
-use yii\web\Controller;
+use app\modules\web\components\WebController;
 
-class DefaultController extends Controller
+class DefaultController extends WebController
 {
-    public $layout='main';
     public function actionIndex()
     {
         return $this->render('index');
