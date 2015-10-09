@@ -11,5 +11,10 @@ class Module extends \yii\base\Module
         parent::init();
 
         // custom initialization code goes here
+        \Yii::$app->view->theme = new \yii\base\Theme([
+            'basePath' => '@web/themes/web',
+            'baseUrl' => '@web/themes/web',
+            'pathMap' => ['@app/modules/web/views' => '@web/themes/web/views'],
+        ]);
     }
 }

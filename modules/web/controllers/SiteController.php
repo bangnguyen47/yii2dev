@@ -1,6 +1,6 @@
 <?php
 
-namespace app\controllers;
+namespace app\modules\web\controllers;
 
 use Yii;
 use yii\filters\AccessControl;
@@ -11,6 +11,7 @@ use app\models\ContactForm;
 
 class SiteController extends Controller
 {
+    public $layout='main';
     public function behaviors()
     {
         return [
